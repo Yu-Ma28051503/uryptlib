@@ -8,7 +8,13 @@
 #include "ctools.h"
 
 struct RSA {
-    
+    byte *n;
+    byte *e;
+    byte *d;
+    byte *p;
+    byte *q;
+    byte *lambda;
+
 }
 
 typedef struct RSA RSA;
@@ -26,22 +32,22 @@ void rsa_free(RSA *rsa);
 /*
  *
 */
-int uc_rsa_encrypt();
+int uc_rsa_encrypt(RSA *rsa);
 
 /*
  *
 */
-int uc_rsa_decrypt();
+int uc_rsa_decrypt(RSA *rsa);
 
 /*
  *
 */
-int uc_rsa_sign();
+int uc_rsa_sign(RSA *rsa);
 
 /*
  *
 */
-int uc_rsa_verify();
+int uc_rsa_verify(RSA *rsa);
 
 
 
