@@ -34,4 +34,9 @@ void uc_print(const char *format, ...);
 */
 void uc_eprint(const char *format, ...);
 
+/*
+ * The uc_ext_GCD function calculates the greatest common divisor of two integers using the extended Euclidean algorithm.
+*/
+int uc_ext_GCD(int a, int b, int *x, int *y);
+
 #endif // CTOOLS_H
